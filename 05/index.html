@@ -1,18 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
 </head>
+
 <body>
-   <form method="get" action="">
-   
+    <form method="post" action="#">
+        <fieldset>
+            <legend>General information</legend>
+            <label for="user_name">Повне ім'я</label>
+            <input required type="text" name="name" id="user_name">
+
+            <br>
+            <label for="user_email">Email</label>
+            <input required type="email" name="email" id="user_email">
+        </fieldset>
+        <fieldset>
+
+            <legend>Set password</legend>
+            <label for="pass">Пароль</label>
+            <input required type="password" id="pass">
+            <br>
+            <label for="pass2">Пароль ще раз</label>
+            <input required type="password" id="pass2">
+        </fieldset>
+        <fieldset>
+            <legend>Other information</legend>
+            <label for="course">Курс</label>
+            <select>
+                <option value="0">--ОБРАТИ КУРС--</option>
+                <option value="1">business analysis</option>
+                <option value="2">qa manual</option>
+                <option value="3">front-end</option>
+                <option value="4">pyton</option>
+            </select> <br>
+
+            <input type="radio" name="sex" value="male" checked> Чоловік
+            <input type="radio" name="sex" value="female"> Жінка
+            <br><br>
+
+            <label for="age">Вік</label>
+            <input type="user_age" id="age">
 
 
+            <br><br>
+                    
+                    <input required type="checkbox" name="" id="agree">
+                    <label for="agree">Я погоджуюсь з обробкою песональних даних</label>
+                
 
 
-   </form> 
+                <br><br>
+
+                <label for="adress">Повна адреса</label>
+                <input type="text" name="adress" placeholder="Країна, регіон, місто/селище,вулиця">
+
+                <br><br>
+                <textarea name="msg">Додаткова інформація</textarea>
+                <br><br>
+                <button type="button submit">Відправити дані</button>
+                <button type="reset menu">Очистити дані</button>
+        </fieldset>
+    </form>
 </body>
+
 </html>
